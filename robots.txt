@@ -1,0 +1,10 @@
+// Tell the browser and search engine crawlers that this output is plain text
+header("Content-Type: text/plain; charset=UTF-8");
+
+// Prevent caching so search engines see the blocking rules immediately
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
+
+User-agent: *
+Disallow: /
